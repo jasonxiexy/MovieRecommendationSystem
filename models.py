@@ -53,6 +53,7 @@ plot.savefig('joinplot.jpg')
 # Eliminating the outliers
 rating_with_RatingCount = data.merge(movie_rating_count, left_on='title', right_on='title', how='left')
 rating_with_RatingCount.head()
+# print(rating_with_RatingCount.head())
 
 # the statistics about the number of user ratings on movie
 pd.set_option('display.float_format', lambda x: '%.3f' % x)
